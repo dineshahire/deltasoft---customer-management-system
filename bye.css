@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C7FFD8; /* Off-White Background */
+    color: #161D6F; /* Dark Blue Text */
+}
+
+.sidebar {
+    background-color: #0B2F9F; /* Cyan Sidebar */
+    color: #FFFFFF; /* White Text in Sidebar */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    color: #C7FFD8; /* Off-White Text for Links */
+    font-size: 18px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #161D6F; /* Dark Blue for Active Link */
+    color: #FFFFFF;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #98DED9; /* Light Blue on Hover */
+    color: #FFFFFF;
+}
+
+.card {
+    margin-top: 20px;
+    border: 1px solid #98DED9; /* Light Blue Border */
+}
+
+.card-header {
+    background-color: #161D6F; /* Dark Blue Header */
+    color: #FFFFFF; /* White Text */
+}
+
+.card-body {
+    background-color: #FFFFFF; /* White Background for Cards */
+    color: #161D6F; /* Dark Blue Text */
+}
