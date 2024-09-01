@@ -1,0 +1,67 @@
+/* Global Styles */
+body {
+    background-color: #e9ecef; /* Light gray background */
+    color: #343a40; /* Dark gray text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+h1 {
+    color: #161D6F; /* Dark blue color for headings */
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #0056b3; /* Darker blue color for the header */
+    color: #fff; /* White text color in the header */
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #fff; /* White background for the card body */
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #98DED9; /* Light teal border color */
+}
+
+.btn-primary {
+    background-color: #28a745; /* Green color for primary buttons */
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+input[readonly] {
+    background-color: #f8f9fa; /* Light gray background for readonly inputs */
+}
+
+/* Alert Styles */
+.alert {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
