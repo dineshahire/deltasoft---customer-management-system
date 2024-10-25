@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="staff.css">
+</head>
+<script>
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+    });
+</script>
+
+<body>
+    <div class="fixed-top">
+        <div class="company-info">
+            <div class="company-logo">
+                <img src="../../assets/logo.png" alt="Company Logo"> 
+            </div>
+        </div>
+        <div class="project-name">
+            Customer Representative System
+        </div>
+        <div class="profile-section"></div>
+                <i class="fa-solid fa-user-circle profile-icon"></i>
+                <p class="profile-name" id="profileName">John Doe</p>
+            </div>
+    </div>
+    
+    <div class="container">
+        <div class="task-section">
+            <h2>Staff Task Dashboard</h2>
+            <form action="#" method="POST" id="taskForm">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Staff Name</th>
+                            <th>Staff ID</th>
+                            <th>Complaint ID</th>
+                            <th>Customer Name</th>
+                            <th>Complaint</th>
+                            <th>Task Allotted</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>ST12345</td>
+                            <td>CMP001</td>
+                            <td>Alice Smith</td>
+                            <td>Product Not Working</td>
+                            <td>Check and replace product</td>
+                            <td>
+                                <select name="status1" id="status1">
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </td>
+                            <td><button type="submit">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>ST67890</td>
+                            <td>CMP002</td>
+                            <td>Bob Johnson</td>
+                            <td>Late Delivery</td>
+                            <td>Offer compensation</td>
+                            <td>
+                                <select name="status2" id="status2">
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </td>
+                            <td><button type="submit">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Emily Smith</td>
+                            <td>ST11223</td>
+                            <td>CMP003</td>
+                            <td>Jane Doe</td>
+                            <td>Wrong Item Received</td>
+                            <td>Arrange return and reship</td>
+                            <td>
+                                <select name="status3" id="status3">
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </td>
+                            <td><button type="submit">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

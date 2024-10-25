@@ -1,0 +1,137 @@
+/* Common styling for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px; /* To prevent content from overlapping with the fixed top section */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #0B2F9F; /* Background color for the fixed top section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-top .company-info {
+    display: flex;
+    align-items: center;
+}
+
+.fixed-top .company-info .company-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.fixed-top .company-info .company-name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.fixed-top .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.fixed-top .navigation a:hover {
+    color: #C7FFD8; /* Hover color for navigation links */
+}
+
+.fixed-top .back-arrow {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.fixed-top .project-name {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #C7FFD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #161D6F;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0B2F9F;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0B2F9F;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-field {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button {
+    background: #0B2F9F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-field button:hover {
+    background: #161D6F;
+}

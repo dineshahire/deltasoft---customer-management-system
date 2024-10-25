@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="complain.css">
+    <script src="https://kit.fontawesome.com/c26da57a21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Fixed Top Section -->
+    <div class="fixed-top">
+        <div class="company-info">
+            <div class="company-logo">
+                <img src="../../../assets/logo.png" alt="Company Logo"> 
+            </div>
+        </div>
+        <div class="project-name">
+            Customer Representative System
+        </div>
+        <div class="navigation">
+            <a href="../customer dashboard/customer dashboard.html">Home</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-box">
+            <h1 class="form-heading">Customer Complaint Form</h1>
+            <form id="complaintForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" value="" readonly>
+                    </div>
+                    <div class="input-field">
+                        <label for="product">Product:</label>
+                        <select id="product" required>
+                            <option value="website-design">Website Design</option>
+                            <option value="website-development">Website Development</option>
+                            <option value="app-development">App Development</option>
+                            <option value="mobile-apps">Mobile Apps</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="maintenance-support">Maintenance and Support</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" placeholder="Complaint Title" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="description">Description:</label>
+                        <textarea id="description" placeholder="Describe your complaint" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="submitComplaintBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="complain.js"></script>
+</body>
+</html>

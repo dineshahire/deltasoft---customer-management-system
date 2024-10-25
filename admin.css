@@ -1,0 +1,56 @@
+/* Sidebar styling */
+.sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+}
+.nav-link {
+    color: #333;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        position: absolute;
+        z-index: 1040;
+        height: 100vh;
+        left: -250px;
+        transition: left 0.3s ease;
+    }
+    #sidebar.show {
+        left: 0;
+    }
+}
+
+/* Main content styling */
+.main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.section {
+    padding: 15px;
+}
+/* Sidebar logo */
+.sidebar-logo {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* For responsive design on smaller screens */
+@media (max-width: 767px) {
+    .sidebar-logo {
+        width: 80px; /* Adjust width for mobile */
+        height: auto;
+    }
+}
+

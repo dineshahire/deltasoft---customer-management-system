@@ -1,0 +1,128 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+}
+
+/* Header styling */
+header {
+    background: #046fea;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Input and button styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Button styling */
+.btn-field button {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-field button:hover {
+    background-color: #004d40;
+}
+
+/* Status message styling */
+.status-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.success-message {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.error-message {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+/* Complaint details styling */
+.complaint-details {
+    margin-top: 20px;
+}
+
+.complaint-details h2 {
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.complaint-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.complaint-details strong {
+    color: #004d40;
+}
